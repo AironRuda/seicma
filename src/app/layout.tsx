@@ -22,6 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
+      <meta
+        name="google-site-verification"
+        content="WKBM6LgBeEDOqrayk-8Ix--U7glsfx2bXFggpVEp0Eg"
+      />
       <body className={`${inter.variable} antialiased font-sans`}>
         <Navbar />
         <main>{children}</main>
