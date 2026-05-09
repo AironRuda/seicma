@@ -3,11 +3,12 @@
 import { useState } from "react";
 import Button from "@/components/ui/Button";
 import { PROJECTS } from "@/lib/constants";
+import Image from "next/image";
 
 const CATEGORIES = [
   { id: "todos", label: "Todos" },
   { id: "ecologicos", label: "Estudios Ecologicos" },
-  { id: "arquitectonico", label: "Diseno Arquitectonico" },
+  { id: "arquitectonico", label: "Diseño Arquitectonico" },
   { id: "topografia", label: "Topografia" },
   { id: "ingenieria-civil", label: "Ingenieria Civil" },
 ];
@@ -36,8 +37,7 @@ export default function ProyectosPage() {
             Nuestro Trabajo
           </span>
           <h1 className="text-4xl sm:text-5xl font-bold text-white">
-            Nuestros{" "}
-            <span className="text-accent-green italic">Proyectos</span>
+            Nuestros <span className="text-accent-green italic">Proyectos</span>
           </h1>
         </div>
       </section>
@@ -74,19 +74,29 @@ export default function ProyectosPage() {
                     GRADIENT_MAP[project.categoryId]
                   } flex items-center justify-center`}
                 >
-                  <svg
-                    className="w-12 h-12 text-white/40"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                  {project.image ? (
+                    <Image
+                      src={"/" + project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                      width={400}
+                      height={300}
                     />
-                  </svg>
+                  ) : (
+                    <svg
+                      className="w-12 h-12 text-white/40"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                      />
+                    </svg>
+                  )}
                 </div>
                 <div className="p-6">
                   <span className="inline-block px-3 py-1 bg-accent-green/10 text-accent-green text-xs font-medium rounded-full mb-3">

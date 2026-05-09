@@ -53,9 +53,9 @@ export const FEATURES = [
     icon: "users",
   },
   {
-    title: "Estudios Ambientales",
+    title: "Responsabilidad ambiental",
     description:
-      "Evaluaciones de impacto ambiental y planes de manejo sostenible.",
+      "Trabajamos para reducir nuestra huella y proteger el medio ambiente. Sostenibilidad en cada paso.",
     icon: "leaf",
   },
   {
@@ -75,7 +75,7 @@ export const FEATURES = [
 export const SERVICES = [
   {
     id: "civil-engineering",
-    title: "Topografía y Control de Obras",
+    title: "Ingenieria civil",
     shortDescription:
       "Soluciones topográficas especializadas que respaldan la planificación, desarrollo y supervisión de proyectos de ingeniería civil.",
     fullDescription:
@@ -89,7 +89,7 @@ export const SERVICES = [
   },
   {
     id: "architecture",
-    title: "Diseño Arquitectónico",
+    title: "Arquitectura",
     shortDescription:
       "Soluciones arquitectónicas integrales orientadas al diseño funcional, estético y tecnológicamente eficiente de espacios.",
     fullDescription:
@@ -104,17 +104,19 @@ export const SERVICES = [
   },
   {
     id: "environmental-engineering",
-    title: "Gestión e Ingeniería Ambiental",
+    title: "Gestión ambiental",
     shortDescription:
       "Servicios especializados en gestión ambiental orientados al cumplimiento normativo y la sostenibilidad de proyectos.",
     fullDescription:
-      "Ofrecemos acompañamiento técnico en ingeniería ambiental para proyectos de infraestructura y desarrollo, enfocado en la gestión de permisos, la elaboración de documentación ambiental y la aplicación de planes ambientales en obra. Apoyamos la formulación e implementación de estrategias de manejo ambiental, así como el seguimiento a componentes bióticos mediante monitoreos especializados de fauna y flora, garantizando el cumplimiento de la normativa vigente y la adecuada relación entre el proyecto y su entorno.",
+      "El desarrollo de cualquier proyecto trae consigo impactos sobre el medio ambiente; por ello, brindamos acompañamiento técnico especializado para la adecuada gestión ambiental que permita prevenir, mitigar, corregir y/o compensar los efectos sobre el componente biótico, abiótico y socioeconómico antes, durante y después del desarrollo de las actividades. Asegurar la sostenibilidad en los proyectos nos permite convertir los desafíos en oportunidades de mejora. A través de nuestra experiencia, garantizamos que cada etapa de su proyecto se desarrolle bajo estándares de excelencia, minimizando impactos, cumplimiento con la normatividad vigente y consolidando una responsabilidad ambiental corporativa.",
     subServices: [
-      "Gestión y tramitación de permisos ambientales ante autoridades competentes",
-      "Elaboración y presentación de informes ambientales técnicos",
-      "Acompañamiento en la implementación de planes ambientales en obra",
-      "Formulación de planes de gestión y manejo ambiental",
-      "Monitoreo ambiental de fauna y flora y procesos asociados a vedas",
+      "Gestión y tramites de permisos ambientales ante Autoridades competentes",
+      "Elaboración y presentación de Informes de Cumplimiento Ambiental",
+      "Formulación de planes de gestión y manejo ambiental.",
+      "Implementación del componente de sostenibilidad en las empresas.",
+      "Formulación de proyectos ambientales",
+      "Acompañamiento en la implementación de Planes de Manejo Ambiental en obra",
+      "Monitoreo ambiental del componente biótico: fauna y flora",
     ],
   },
   {
@@ -123,7 +125,7 @@ export const SERVICES = [
     shortDescription:
       "Soluciones integrales para la gestión preventiva de riesgos laborales y el cumplimiento del SG-SST.",
     fullDescription:
-      "Brindamos acompañamiento especializado en Seguridad y Salud en el Trabajo mediante la estructuración, puesta en marcha y mejora continua del Sistema de Gestión de SST. Nuestro enfoque se centra en la identificación y control de riesgos, el fortalecimiento de la cultura preventiva y el cumplimiento de la normativa vigente, contribuyendo a entornos laborales seguros, saludables y eficientes.",
+      "El Sistema de Gestión  de Seguridad y Salud en el Trabajo (SST) se manejan de forma interna y exclusiva, garantizando que todos nuestros procesos cumplan con los más altos estándares de bienestar y legalidad para nuestro personal, asegurando así la continuidad y excelencia de las obras que entregamos a nuestros clientes.",
     subServices: [
       "Asesoría técnica en Seguridad y Salud en el Trabajo",
       "Diseño y estructuración del Sistema de Gestión SG-SST",
@@ -167,11 +169,11 @@ export const FOOTER_LINKS = {
 };
 
 export const CONTACT_INFO = {
-  address: "Av. Principal 1234, Ibague, Tolima, Colombia",
+  address: "Carrera 4 H #42, barrio La Macarena, Ibagué, Tolima, Colombia",
   phone: "+57 318 675 1703",
   email: "seicmaadmon@gmail.com",
   schedule: "Lunes a Viernes: 8:00 AM - 6:00 PM",
-  instagram: "@SeicmaProyectos",
+  instagram: "@seicmaproyectos",
 };
 
 export const PROJECTS = [
@@ -193,11 +195,12 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    title: "Residencial Los Alamos",
+    title: "Diseño de Interiores",
     category: "Diseno Arquitectonico",
     categoryId: "arquitectonico",
     description:
-      "Proyecto arquitectonico integral para conjunto residencial de 120 viviendas con areas verdes.",
+      "Diseño y construccion de barra de cocina con acabados de lujo.",
+    image: "images/kitchen-project.jpeg",
   },
   {
     id: 4,

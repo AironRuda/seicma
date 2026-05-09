@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Button from "@/components/ui/Button";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Nosotros | SEICMA",
@@ -86,10 +87,10 @@ const TEAM = [
   },
   {
     name: "Alejandra Zapata Baez",
-    role: "Bióloga",
+    role: "Bióloga y esp. Evaluación Ambiental de Proyectos",
     initials: "AZ",
     description:
-      "Bióloga con amplia experiencia en el análisis de impactos ambientales y la planificación de proyectos de construcción, asegurando la calidad y eficiencia en cada etapa del proceso.",
+      "Profesional con amplia trayectoria en la gestión ambiental de proyectos de infraestructura vial. Alta capacidad para el análisis de impactos, la formulación de estrategias de manejo y el aseguramiento de la eficiencia técnica y legal en cada etapa del proceso, garantizando la calidad y la responsabilidad ambiental corporativa.",
   },
 ];
 
@@ -139,14 +140,13 @@ export default function NosotrosPage() {
                 sino superar las expectativas en cada proyecto.
               </p>
             </div>
-            <div className="w-full aspect-[4/3] rounded-2xl bg-gradient-to-br from-primary-dark/10 to-accent-green/10 border border-gray-200 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl font-bold text-primary-dark/20 mb-2">
-                  2010
-                </div>
-                <p className="text-text-secondary">Fundacion de SEICMA</p>
-              </div>
-            </div>
+            <Image
+              className="w-auto h-full object-cover rounded-2xl"
+              src="/images/us-image.jpeg"
+              alt="Equipo SEICMA"
+              width={300}
+              height={300}
+            />
           </div>
         </div>
       </section>
@@ -167,7 +167,7 @@ export default function NosotrosPage() {
             {TEAM.map((member) => (
               <div
                 key={member.name}
-                className="bg-white rounded-xl p-8 text-center border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+                className="bg-white flex flex-col items-center gap-2 rounded-xl p-8 text-center border border-gray-200 hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="w-20 h-20 rounded-full bg-primary-dark mx-auto mb-4 flex items-center justify-center text-white text-xl font-bold">
                   {member.initials}

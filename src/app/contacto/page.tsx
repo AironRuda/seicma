@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CONTACT_INFO, SERVICES } from "@/lib/constants";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contacto | SEICMA",
@@ -195,9 +196,14 @@ export default function ContactoPage() {
                       <p className="text-sm font-medium text-text-primary">
                         Instagram
                       </p>
-                      <p className="text-sm text-text-secondary">
+                      <Link
+                        href="https://www.instagram.com/seicmaproyectos/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-text-secondary hover:text-accent-green transition-colors"
+                      >
                         {CONTACT_INFO.instagram}
-                      </p>
+                      </Link>
                     </div>
                   </li>
                   <li className="flex gap-3">
